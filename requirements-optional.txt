@@ -1,0 +1,5 @@
+# Optional: transformer baseline (DistilBERT). Large download (~1 GB with torch).
+# Install only if you want the transformer row in the comparison table:
+#   pip install -r requirements-optional.txt --extra-index-url https://download.pytorch.org/whl/cpu
+transformers>=4.40
+torch>=2.2

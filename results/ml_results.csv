@@ -1,0 +1,10 @@
+model,family,train_seconds,accuracy,precision,recall,f1
+TF-IDF unigram + Naive Bayes,classical ML,1.8,0.8328,0.8359,0.8328,0.8325
+TF-IDF uni+bigram + Naive Bayes,classical ML,9.8,0.8684,0.8697,0.8684,0.8683
+TF-IDF unigram + Logistic Regression,classical ML,2.3,0.8816,0.8816,0.8816,0.8816
+TF-IDF uni+bigram + Logistic Regression,classical ML,10.6,0.8982,0.8982,0.8982,0.8982
+TF-IDF unigram + Linear SVM,classical ML,2.0,0.8773,0.8774,0.8773,0.8773
+TF-IDF uni+bigram + Linear SVM,classical ML,10.3,0.8987,0.8987,0.8987,0.8987
+"Ablation: LR uni+bigram, no_stopword_removal",ablation,,0.9048,0.9048,0.9048,0.9048
+"Ablation: LR uni+bigram, negations_removed",ablation,,0.8934,0.8934,0.8934,0.8934
+"Ablation: LR uni+bigram, no_lemmatization",ablation,,0.8973,0.8973,0.8973,0.8973

@@ -1,0 +1,10 @@
+model,family,n,k,seconds,accuracy,precision,recall,f1
+"1-gram LM perplexity classifier (add-k, k=1.0)",n-gram LM,1,1.0,19.1,0.8088,0.8145,0.8088,0.8079
+"1-gram LM perplexity classifier (add-k, k=0.1)",n-gram LM,1,0.1,23.3,0.8019,0.8079,0.8019,0.8009
+"1-gram LM perplexity classifier (add-k, k=0.01)",n-gram LM,1,0.01,22.1,0.7933,0.7995,0.7933,0.7922
+"2-gram LM perplexity classifier (add-k, k=1.0)",n-gram LM,2,1.0,26.6,0.8738,0.8744,0.8738,0.8738
+"2-gram LM perplexity classifier (add-k, k=0.1)",n-gram LM,2,0.1,42.1,0.8615,0.8618,0.8615,0.8615
+"2-gram LM perplexity classifier (add-k, k=0.01)",n-gram LM,2,0.01,42.0,0.8323,0.8326,0.8323,0.8322
+"3-gram LM perplexity classifier (add-k, k=1.0)",n-gram LM,3,1.0,61.2,0.8792,0.8801,0.8792,0.8792
+"3-gram LM perplexity classifier (add-k, k=0.1)",n-gram LM,3,0.1,41.5,0.8666,0.867,0.8666,0.8665
+"3-gram LM perplexity classifier (add-k, k=0.01)",n-gram LM,3,0.01,54.4,0.8469,0.8472,0.8469,0.8469

@@ -1,0 +1,27 @@
+
+=== VADER ===
+              precision    recall  f1-score   support
+
+    negative     0.7975    0.5326    0.6387     12500
+    positive     0.6491    0.8648    0.7416     12500
+
+    accuracy                         0.6987     25000
+   macro avg     0.7233    0.6987    0.6901     25000
+weighted avg     0.7233    0.6987    0.6901     25000
+
+
+=== TextBlob ===
+              precision    recall  f1-score   support
+
+    negative     0.8981    0.4371    0.5880     12500
+    positive     0.6280    0.9504    0.7563     12500
+
+    accuracy                         0.6938     25000
+   macro avg     0.7631    0.6938    0.6722     25000
+weighted avg     0.7631    0.6938    0.6722     25000
+
+
+Saved C:\Users\HP\Desktop\Mini Project NLP\results\lexicon_results.csv
+   model  family  predict_seconds  accuracy  precision  recall     f1
+   VADER lexicon             56.5    0.6987     0.7233  0.6987 0.6901
+TextBlob lexicon             24.2    0.6938     0.7631  0.6938 0.6722

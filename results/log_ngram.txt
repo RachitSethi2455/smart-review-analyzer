@@ -1,0 +1,115 @@
+Preprocessing 25,000 train reviews (lm)...
+  done in 35s
+Preprocessing 25,000 test reviews (lm)...
+  done in 30s
+
+=== 1-gram LM perplexity classifier (add-k, k=1.0) ===
+              precision    recall  f1-score   support
+
+    negative     0.7720    0.8763    0.8209     12500
+    positive     0.8570    0.7412    0.7949     12500
+
+    accuracy                         0.8088     25000
+   macro avg     0.8145    0.8088    0.8079     25000
+weighted avg     0.8145    0.8088    0.8079     25000
+
+
+=== 1-gram LM perplexity classifier (add-k, k=0.1) ===
+              precision    recall  f1-score   support
+
+    negative     0.7648    0.8720    0.8149     12500
+    positive     0.8511    0.7318    0.7869     12500
+
+    accuracy                         0.8019     25000
+   macro avg     0.8079    0.8019    0.8009     25000
+weighted avg     0.8079    0.8019    0.8009     25000
+
+
+=== 1-gram LM perplexity classifier (add-k, k=0.01) ===
+              precision    recall  f1-score   support
+
+    negative     0.7565    0.8651    0.8072     12500
+    positive     0.8425    0.7215    0.7773     12500
+
+    accuracy                         0.7933     25000
+   macro avg     0.7995    0.7933    0.7922     25000
+weighted avg     0.7995    0.7933    0.7922     25000
+
+
+=== 2-gram LM perplexity classifier (add-k, k=1.0) ===
+              precision    recall  f1-score   support
+
+    negative     0.8597    0.8934    0.8762     12500
+    positive     0.8891    0.8542    0.8713     12500
+
+    accuracy                         0.8738     25000
+   macro avg     0.8744    0.8738    0.8738     25000
+weighted avg     0.8744    0.8738    0.8738     25000
+
+
+=== 2-gram LM perplexity classifier (add-k, k=0.1) ===
+              precision    recall  f1-score   support
+
+    negative     0.8517    0.8754    0.8634     12500
+    positive     0.8718    0.8476    0.8595     12500
+
+    accuracy                         0.8615     25000
+   macro avg     0.8618    0.8615    0.8615     25000
+weighted avg     0.8618    0.8615    0.8615     25000
+
+
+=== 2-gram LM perplexity classifier (add-k, k=0.01) ===
+              precision    recall  f1-score   support
+
+    negative     0.8226    0.8474    0.8348     12500
+    positive     0.8426    0.8172    0.8297     12500
+
+    accuracy                         0.8323     25000
+   macro avg     0.8326    0.8323    0.8322     25000
+weighted avg     0.8326    0.8323    0.8322     25000
+
+
+=== 3-gram LM perplexity classifier (add-k, k=1.0) ===
+              precision    recall  f1-score   support
+
+    negative     0.8617    0.9034    0.8821     12500
+    positive     0.8985    0.8550    0.8762     12500
+
+    accuracy                         0.8792     25000
+   macro avg     0.8801    0.8792    0.8792     25000
+weighted avg     0.8801    0.8792    0.8792     25000
+
+
+=== 3-gram LM perplexity classifier (add-k, k=0.1) ===
+              precision    recall  f1-score   support
+
+    negative     0.8542    0.8841    0.8689     12500
+    positive     0.8799    0.8490    0.8642     12500
+
+    accuracy                         0.8666     25000
+   macro avg     0.8670    0.8666    0.8665     25000
+weighted avg     0.8670    0.8666    0.8665     25000
+
+
+=== 3-gram LM perplexity classifier (add-k, k=0.01) ===
+              precision    recall  f1-score   support
+
+    negative     0.8382    0.8598    0.8489     12500
+    positive     0.8561    0.8340    0.8449     12500
+
+    accuracy                         0.8469     25000
+   macro avg     0.8472    0.8469    0.8469     25000
+weighted avg     0.8472    0.8469    0.8469     25000
+
+
+Saved C:\Users\HP\Desktop\Mini Project NLP\results\ngram_results.csv
+                                          model    family  n    k  seconds  accuracy  precision  recall     f1
+ 1-gram LM perplexity classifier (add-k, k=1.0) n-gram LM  1 1.00     19.1    0.8088     0.8145  0.8088 0.8079
+ 1-gram LM perplexity classifier (add-k, k=0.1) n-gram LM  1 0.10     23.3    0.8019     0.8079  0.8019 0.8009
+1-gram LM perplexity classifier (add-k, k=0.01) n-gram LM  1 0.01     22.1    0.7933     0.7995  0.7933 0.7922
+ 2-gram LM perplexity classifier (add-k, k=1.0) n-gram LM  2 1.00     26.6    0.8738     0.8744  0.8738 0.8738
+ 2-gram LM perplexity classifier (add-k, k=0.1) n-gram LM  2 0.10     42.1    0.8615     0.8618  0.8615 0.8615
+2-gram LM perplexity classifier (add-k, k=0.01) n-gram LM  2 0.01     42.0    0.8323     0.8326  0.8323 0.8322
+ 3-gram LM perplexity classifier (add-k, k=1.0) n-gram LM  3 1.00     61.2    0.8792     0.8801  0.8792 0.8792
+ 3-gram LM perplexity classifier (add-k, k=0.1) n-gram LM  3 0.10     41.5    0.8666     0.8670  0.8666 0.8665
+3-gram LM perplexity classifier (add-k, k=0.01) n-gram LM  3 0.01     54.4    0.8469     0.8472  0.8469 0.8469

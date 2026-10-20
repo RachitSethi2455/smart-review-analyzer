@@ -1,0 +1,18 @@
+family,model,accuracy,precision,recall,f1
+classical ML,TF-IDF uni+bigram + Linear SVM,0.8987,0.8987,0.8987,0.8987
+classical ML,TF-IDF uni+bigram + Logistic Regression,0.8982,0.8982,0.8982,0.8982
+classical ML,TF-IDF unigram + Logistic Regression,0.8816,0.8816,0.8816,0.8816
+n-gram LM,"3-gram LM perplexity classifier (add-k, k=1.0)",0.8792,0.8801,0.8792,0.8792
+classical ML,TF-IDF unigram + Linear SVM,0.8773,0.8774,0.8773,0.8773
+n-gram LM,"2-gram LM perplexity classifier (add-k, k=1.0)",0.8738,0.8744,0.8738,0.8738
+classical ML,TF-IDF uni+bigram + Naive Bayes,0.8684,0.8697,0.8684,0.8683
+n-gram LM,"3-gram LM perplexity classifier (add-k, k=0.1)",0.8666,0.867,0.8666,0.8665
+n-gram LM,"2-gram LM perplexity classifier (add-k, k=0.1)",0.8615,0.8618,0.8615,0.8615
+n-gram LM,"3-gram LM perplexity classifier (add-k, k=0.01)",0.8469,0.8472,0.8469,0.8469
+classical ML,TF-IDF unigram + Naive Bayes,0.8328,0.8359,0.8328,0.8325
+n-gram LM,"2-gram LM perplexity classifier (add-k, k=0.01)",0.8323,0.8326,0.8323,0.8322
+n-gram LM,"1-gram LM perplexity classifier (add-k, k=1.0)",0.8088,0.8145,0.8088,0.8079
+n-gram LM,"1-gram LM perplexity classifier (add-k, k=0.1)",0.8019,0.8079,0.8019,0.8009
+n-gram LM,"1-gram LM perplexity classifier (add-k, k=0.01)",0.7933,0.7995,0.7933,0.7922
+lexicon,VADER,0.6987,0.7233,0.6987,0.6901
+lexicon,TextBlob,0.6938,0.7631,0.6938,0.6722

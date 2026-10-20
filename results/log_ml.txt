@@ -1,0 +1,129 @@
+Preprocessing 25,000 train reviews (default)...
+  done in 34s
+Preprocessing 25,000 test reviews (default)...
+  done in 31s
+
+=== TF-IDF unigram + Naive Bayes ===
+              precision    recall  f1-score   support
+
+    negative     0.8037    0.8809    0.8405     12500
+    positive     0.8682    0.7848    0.8244     12500
+
+    accuracy                         0.8328     25000
+   macro avg     0.8359    0.8328    0.8325     25000
+weighted avg     0.8359    0.8328    0.8325     25000
+
+
+=== TF-IDF uni+bigram + Naive Bayes ===
+              precision    recall  f1-score   support
+
+    negative     0.8479    0.8978    0.8722     12500
+    positive     0.8914    0.8390    0.8644     12500
+
+    accuracy                         0.8684     25000
+   macro avg     0.8697    0.8684    0.8683     25000
+weighted avg     0.8697    0.8684    0.8683     25000
+
+
+=== TF-IDF unigram + Logistic Regression ===
+              precision    recall  f1-score   support
+
+    negative     0.8767    0.8880    0.8823     12500
+    positive     0.8865    0.8751    0.8808     12500
+
+    accuracy                         0.8816     25000
+   macro avg     0.8816    0.8816    0.8816     25000
+weighted avg     0.8816    0.8816    0.8816     25000
+
+
+=== TF-IDF uni+bigram + Logistic Regression ===
+              precision    recall  f1-score   support
+
+    negative     0.8971    0.8994    0.8983     12500
+    positive     0.8992    0.8969    0.8980     12500
+
+    accuracy                         0.8982     25000
+   macro avg     0.8982    0.8982    0.8982     25000
+weighted avg     0.8982    0.8982    0.8982     25000
+
+
+=== TF-IDF unigram + Linear SVM ===
+              precision    recall  f1-score   support
+
+    negative     0.8706    0.8862    0.8784     12500
+    positive     0.8842    0.8683    0.8762     12500
+
+    accuracy                         0.8773     25000
+   macro avg     0.8774    0.8773    0.8773     25000
+weighted avg     0.8774    0.8773    0.8773     25000
+
+
+=== TF-IDF uni+bigram + Linear SVM ===
+              precision    recall  f1-score   support
+
+    negative     0.8970    0.9009    0.8989     12500
+    positive     0.9004    0.8966    0.8985     12500
+
+    accuracy                         0.8987     25000
+   macro avg     0.8987    0.8987    0.8987     25000
+weighted avg     0.8987    0.8987    0.8987     25000
+
+Preprocessing 25,000 train reviews (no_stopword_removal)...
+  done in 37s
+Preprocessing 25,000 test reviews (no_stopword_removal)...
+  done in 33s
+
+=== Ablation: LR uni+bigram, no_stopword_removal ===
+              precision    recall  f1-score   support
+
+    negative     0.9066    0.9026    0.9046     12500
+    positive     0.9030    0.9070    0.9050     12500
+
+    accuracy                         0.9048     25000
+   macro avg     0.9048    0.9048    0.9048     25000
+weighted avg     0.9048    0.9048    0.9048     25000
+
+Preprocessing 25,000 train reviews (negations_removed)...
+  done in 31s
+Preprocessing 25,000 test reviews (negations_removed)...
+  done in 29s
+
+=== Ablation: LR uni+bigram, negations_removed ===
+              precision    recall  f1-score   support
+
+    negative     0.8929    0.8940    0.8935     12500
+    positive     0.8939    0.8928    0.8933     12500
+
+    accuracy                         0.8934     25000
+   macro avg     0.8934    0.8934    0.8934     25000
+weighted avg     0.8934    0.8934    0.8934     25000
+
+Preprocessing 25,000 train reviews (no_lemmatization)...
+  done in 67s
+Preprocessing 25,000 test reviews (no_lemmatization)...
+  done in 40s
+
+=== Ablation: LR uni+bigram, no_lemmatization ===
+              precision    recall  f1-score   support
+
+    negative     0.8955    0.8996    0.8976     12500
+    positive     0.8991    0.8950    0.8971     12500
+
+    accuracy                         0.8973     25000
+   macro avg     0.8973    0.8973    0.8973     25000
+weighted avg     0.8973    0.8973    0.8973     25000
+
+
+Saved C:\Users\HP\Desktop\Mini Project NLP\results\ml_results.csv
+                                       model       family  train_seconds  accuracy  precision  recall     f1
+                TF-IDF unigram + Naive Bayes classical ML            1.8    0.8328     0.8359  0.8328 0.8325
+             TF-IDF uni+bigram + Naive Bayes classical ML            9.8    0.8684     0.8697  0.8684 0.8683
+        TF-IDF unigram + Logistic Regression classical ML            2.3    0.8816     0.8816  0.8816 0.8816
+     TF-IDF uni+bigram + Logistic Regression classical ML           10.6    0.8982     0.8982  0.8982 0.8982
+                 TF-IDF unigram + Linear SVM classical ML            2.0    0.8773     0.8774  0.8773 0.8773
+              TF-IDF uni+bigram + Linear SVM classical ML           10.3    0.8987     0.8987  0.8987 0.8987
+Ablation: LR uni+bigram, no_stopword_removal     ablation            NaN    0.9048     0.9048  0.9048 0.9048
+  Ablation: LR uni+bigram, negations_removed     ablation            NaN    0.8934     0.8934  0.8934 0.8934
+   Ablation: LR uni+bigram, no_lemmatization     ablation            NaN    0.8973     0.8973  0.8973 0.8973
+
+Saved best model (TF-IDF uni+bigram + Logistic Regression, F1=0.8982) to C:\Users\HP\Desktop\Mini Project NLP\models\sentiment_best.joblib

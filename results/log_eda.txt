@@ -1,0 +1,9 @@
+count    25000.0
+mean       233.8
+std        173.7
+min         10.0
+25%        127.0
+50%        174.0
+75%        284.0
+max       2470.0
+Figures saved to C:\Users\HP\Desktop\Mini Project NLP\results\figures
